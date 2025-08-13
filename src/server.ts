@@ -26,22 +26,25 @@ const app = fastify({
 
 app.setSerializerCompiler(serializerCompiler);
 app.setValidatorCompiler(validatorCompiler);
-app.register(fastifySwagger, {
-  openapi: {
-    info: {
-      title: "Desafio Node.js",
-      version: "1.0.0",
+
+if (process.env.NODE_ENV === "development") {
+  app.register(fastifySwagger, {
+    openapi: {
+      info: {
+        title: "Desafio Node.js",
+        version: "1.0.0",
+      },
     },
-  },
-  transform: jsonSchemaTransform,
-});
-app.register(fastifySwaggerUi, { routePrefix: "/swagger" });
-app.register(scalarApiReference, {
-  routePrefix: "/docs",
-  configuration: {
-    theme: "kepler",
-  },
-});
+    transform: jsonSchemaTransform,
+  });
+  app.register(fastifySwaggerUi, { routePrefix: "/swagger" });
+  app.register(scalarApiReference, {
+    routePrefix: "/docs",
+    configuration: {
+      theme: "kepler",
+    },
+  });
+}
 
 app.register(getCoursesRoute);
 app.register(getCourseByIdRoute);
