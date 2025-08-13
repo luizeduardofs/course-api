@@ -1,0 +1,19 @@
+@baseUrl = http://127.0.0.1:3333
+
+GET {{baseUrl}}/courses HTTP/1.1
+content-type: application/json
+
+###
+
+GET {{baseUrl}}/courses/37c90c9a-07f7-46c4-be00-576a5aa49a3c HTTP/1.1
+content-type: application/json
+
+###
+
+POST {{baseUrl}}/courses HTTP/1.1
+content-type: application/json
+
+{
+    "title": "",
+    "description": ""
+}
