@@ -1,6 +1,6 @@
 @baseUrl = http://127.0.0.1:3333
 
-GET {{baseUrl}}/courses HTTP/1.1
+GET {{baseUrl}}/courses?orderBy=title&page=1 HTTP/1.1
 content-type: application/json
 
 ###
@@ -14,6 +14,6 @@ POST {{baseUrl}}/courses HTTP/1.1
 content-type: application/json
 
 {
-    "title": "",
-    "description": ""
+    "title": "Curso de React",
+    "description": "Vamos aprender tudo sobre isso"
 }

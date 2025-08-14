@@ -15,6 +15,34 @@
       "when": 1755096479832,
       "tag": "0001_little_nightcrawler",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1755139448162,
+      "tag": "0002_marvelous_sinister_six",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1755139511907,
+      "tag": "0003_gifted_rockslide",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1755140557519,
+      "tag": "0004_magenta_shooting_star",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1755182317773,
+      "tag": "0005_unknown_greymalkin",
+      "breakpoints": true
     }
   ]
 }
