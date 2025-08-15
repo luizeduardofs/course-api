@@ -43,6 +43,13 @@
       "when": 1755182317773,
       "tag": "0005_unknown_greymalkin",
       "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1755228147882,
+      "tag": "0006_public_ink",
+      "breakpoints": true
     }
   ]
 }

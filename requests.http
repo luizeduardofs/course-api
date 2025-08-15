@@ -17,3 +17,13 @@ content-type: application/json
     "title": "Curso de React",
     "description": "Vamos aprender tudo sobre isso"
 }
+
+###
+
+POST {{baseUrl}}/sessions HTTP/1.1
+content-type: application/json
+
+{
+    "email": "Larissa.Pereira@bol.com.br",
+    "password": "12345678"
+}

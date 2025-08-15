@@ -11,6 +11,7 @@ import {
 import { createCourseRoute } from "./routes/create-course.ts";
 import { getCourseByIdRoute } from "./routes/get-course-by-id.ts";
 import { getCoursesRoute } from "./routes/get-course.ts";
+import { loginRoute } from "./routes/login.ts";
 
 const app = fastify({
   logger: {
@@ -49,5 +50,6 @@ if (process.env.NODE_ENV === "development") {
 app.register(getCoursesRoute);
 app.register(getCourseByIdRoute);
 app.register(createCourseRoute);
+app.register(loginRoute);
 
 export { app };
